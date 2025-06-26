@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: ink free;
+    transition: all 0.5s;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative; 
+    background: rgb(1, 48, 255); 
+}
+
+body>h1 {
+    position: absolute;
+    top: 4rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container h1 {
+    margin: 1rem;
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 300px;
+    color: #000;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+button {
+    color: #000;
+    background: #fff;
+    font-size: 20px;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+button:hover {
+    background: #eee;
+}
+
+button:active {
+    transition: all 0.2s;
+    color: #fff;
+    background: #000;
+}
+
+#indicator, #newhs {
+    font-size: 30px;
+    text-align: center;
+}
+
+.response-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.response-box p {
+    font-size: 20px;
+    span {
+        color: yellow;
+    }
+    span:hover {
+        font-size: 25px;
+    }
+}
+
+h1, h2, p {cursor: default;}

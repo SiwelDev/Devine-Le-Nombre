@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devine le nombre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Salut, jouons &agrave; un petit jeu:</h1>
+    <div class="container">
+        <div class="header">
+            <h1>Devine le nombre (de 1-100)</h1>
+        </div>
+        <div class="input">
+            <input type="search" id="chiffre">
+            <button onclick="checkNumber()" id="validate">Valider</button>
+            <button onclick="restart()" id="restart">Recommencer</button>
+        </div>
+        <p id="indicator">"Choisissez votre nombre. :)"</p>
+        <div class="response-box">
+            <p>Tentatives: <span id="score">0</span></p>
+            <p>Record: <span id="highscore">0</span></p>
+        </div>
+        <p id="newhs"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
