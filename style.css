@@ -18,9 +18,7 @@ body {
     background: rgb(1, 48, 255); 
 }
 
-body>h1 {
-    position: absolute;
-    top: 4rem;
+h1.titre {
     font-size: 3rem;
     font-weight: bold;
 }
@@ -28,9 +26,11 @@ body>h1 {
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.container h1 {
+h1.s-titre {
     margin: 1rem;
 }
 
