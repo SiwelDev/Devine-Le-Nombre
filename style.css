@@ -101,31 +101,39 @@ h1, h2, p {cursor: default;
 
 @media screen and (max-width: 600px) {
     h1.titre {
-        font-size: 2rem;
+        font-size: 7vw; /* adaptatif */
     }
 
     h1.s-titre {
-        font-size: 1.5rem;
-        margin: 0.5rem;
+        font-size: 5vw;
+        margin: 1rem 0;
     }
 
     input {
         width: 80%;
-        font-size: 1rem;
-        padding: 0.7rem;
+        font-size: 1.2rem;
+        padding: 0.8rem;
+        margin: 0.5rem;
     }
 
     button {
         font-size: 1rem;
-        padding: 0.7rem;
+        padding: 0.8rem;
         margin: 0.5rem;
     }
 
-    #indicator, #newhs {
-        font-size: 1.2rem;
+    .input {
+        flex-direction: column; /* boutons en colonne */
+        gap: 0.5rem;
     }
 
-    .response-box p {
+    #indicator, #newhs {
+        font-size: 1.1rem;
+        margin-top: 1rem;
+    }
+
+    .response-box {
+        flex-direction: column;
         font-size: 1rem;
     }
 
