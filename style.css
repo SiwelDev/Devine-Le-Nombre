@@ -3,65 +3,68 @@
     padding: 0;
     box-sizing: border-box;
     color: #fff;
-    font-family: ink free;
+    font-family: 'Ink Free', sans-serif;
     transition: all 0.5s;
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: relative; 
-    background: rgb(1, 48, 255); 
-}
-
-h1.titre {
-    font-size: 3rem;
-    font-weight: bold;
+    background: rgb(1, 48, 255);
+    padding: 2rem;
 }
 
 .container {
+    max-width: 600px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
-h1.s-titre {
-    margin: 1rem;
+h1.titre {
+    font-size: clamp(1.5rem, 6vw, 3rem);
+    font-weight: bold;
 }
 
-input, button {
-    border: none;
-    outline: none;
+h1.s-titre {
+    font-size: clamp(1.2rem, 5vw, 2.2rem);
+    margin: 1rem 0;
 }
 
 .input {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    gap: 0.8rem;
+    margin: 1rem 0;
+    width: 100%;
 }
 
 input {
-    width: 300px;
-    color: #000;
-    font-size: 1.5rem;
-    padding: 1rem;
+    flex: 1 1 200px;
+    max-width: 300px;
+    font-size: 1rem;
+    padding: 0.8rem;
     border-radius: 1rem;
-    margin: 1rem;
+    border: none;
+    outline: none;
+    color: #000;
 }
 
 button {
-    color: #000;
     background: #fff;
-    font-size: 20px;
-    padding: 1rem;
+    color: #000;
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
     font-weight: bold;
     border-radius: 1rem;
-    margin: 1rem;
+    border: none;
+    cursor: pointer;
 }
 
 button:hover {
@@ -75,69 +78,31 @@ button:active {
 }
 
 #indicator, #newhs {
-    font-size: 30px;
-    text-align: center;
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    margin: 1rem 0;
 }
 
 .response-box {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1rem;
     margin: 1rem;
 }
 
 .response-box p {
-    font-size: 20px;
-    span {
-        color: yellow;
-    }
-    span:hover {
-        font-size: 25px;
-    }
+    font-size: clamp(0.9rem, 3vw, 1.3rem);
 }
 
-h1, h2, p {cursor: default;
+.response-box span {
+    color: yellow;
+}
 
-@media screen and (max-width: 600px) {
-    h1.titre {
-        font-size: 7vw; /* adaptatif */
-    }
+.response-box span:hover {
+    font-size: 1.1em;
+}
 
-    h1.s-titre {
-        font-size: 5vw;
-        margin: 1rem 0;
-    }
-
-    input {
-        width: 80%;
-        font-size: 1.2rem;
-        padding: 0.8rem;
-        margin: 0.5rem;
-    }
-
-    button {
-        font-size: 1rem;
-        padding: 0.8rem;
-        margin: 0.5rem;
-    }
-
-    .input {
-        flex-direction: column; /* boutons en colonne */
-        gap: 0.5rem;
-    }
-
-    #indicator, #newhs {
-        font-size: 1.1rem;
-        margin-top: 1rem;
-    }
-
-    .response-box {
-        flex-direction: column;
-        font-size: 1rem;
-    }
-
-    .response-box span:hover {
-        font-size: 1.1rem;
-    }
+h1, h2, p {
+    cursor: default;
 }
